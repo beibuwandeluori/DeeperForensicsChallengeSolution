@@ -18,7 +18,7 @@ Please refer to the following important hints to ensure a pleasant online evalua
 
 2. [Register](https://competitions.codalab.org/competitions/25228#participate) DeeperForensics Challenge 2020 using the created CodaLab account;
 
-3. Send your **CodaLab user name (i.e., team name)**, **the number of team members**, **affiliation**, **CodaLab email address**, and **AWS account id (12 digits)** to the organizers' email address: [deeperforensics@gmail.com](mailto:deeperforensics@gmail.com). We will check and allocate evaluation resources for you.
+3. Send your **CodaLab user name (i.e., team name)**, **the number of team members**, **affiliation**, **CodaLab email address**, and **AWS account id (12 digits)** to the organizers' email address: [deeperforensics@gmail.com](mailto:deeperforensics@gmail.com). We will check and allocate evaluation resources for you. You will receive a email notifying you that the resources have been allocated. **If you don't receive the email, it may be recognized as spam.** You will receive 3 emails in one evaluation.
 
 ## Install and configure AWS CLI
 Then you should install AWS CLI ([version 2](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html) recommended).
@@ -78,7 +78,7 @@ You need to implement the abstract function `predict(self, video_frames)` in you
         pass
 ```
 
-- Modify Line 25 in `run_evalution.py` to import your own detector for evaluation.
+- Modify Line 28 in `run_evalution.py` to import your own detector for evaluation.
 
 ```python
 ########################################################################################################
@@ -98,7 +98,7 @@ from toy_predict import ToyPredictor as DeeperForensicsDetector
 
 The online evaluation for submissions may take several hours. It is slow to debug on the cloud (and the evaluation chances are limited). Hence, we provide the tools for the participants to locally test the correctness of the submission.
 
-Before running, modify Line 28 in `local_test.py`.
+Before running, modify Line 31 in `local_test.py`.
 
 To verify your algorithm can be run properly, run the following command:
 
@@ -177,4 +177,6 @@ docker tag deeperforensics-challenge-<your_aws_id>:latest 212923332099.dkr.ecr.u
 docker push 212923332099.dkr.ecr.us-west-2.amazonaws.com/deeperforensics-challenge-<your_aws_id>:latest
 ```
 
-After you push to the repo, the evaluation will automatically start. In **2.5 hours** you should receive a email with the evaluation result. Finally, you can submit the evaluation result to the [challenge website](https://competitions.codalab.org/competitions/25228).
+After you push to the repo, the evaluation will automatically start and you will receive an email notifying you that the evaluation starts. In **2.5 hours** you should receive a email with the evaluation result. If there is something wrong like timeout or error, you will also receive a reminder email. Please look in the spam if you don't receive any email!
+
+Finally, you can submit the evaluation result to the [challenge website](https://competitions.codalab.org/competitions/25228).
