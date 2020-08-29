@@ -78,7 +78,7 @@ You need to implement the abstract function `predict(self, video_frames)` in you
         pass
 ```
 
-- Modify Line 28 in `run_evalution.py` to import your own detector for evaluation.
+- Modify [Line 25](https://github.com/Drdestiny/DeeperForensicsChallengeSubmissionExample/blob/master/run_evaluation.py#L25) in `run_evalution.py` to import your own detector for evaluation.
 
 ```python
 ########################################################################################################
@@ -98,7 +98,7 @@ from toy_predict import ToyPredictor as DeeperForensicsDetector
 
 The online evaluation for submissions may take several hours. It is slow to debug on the cloud (and the evaluation chances are limited). Hence, we provide the tools for the participants to locally test the correctness of the submission.
 
-Before running, modify Line 31 in `local_test.py`.
+Before running, modify [Line 28](https://github.com/Drdestiny/DeeperForensicsChallengeSubmissionExample/blob/master/local_test.py#L28) in `local_test.py`.
 
 To verify your algorithm can be run properly, run the following command:
 
