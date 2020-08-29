@@ -177,6 +177,6 @@ docker tag deeperforensics-challenge-<your_aws_id>:latest 212923332099.dkr.ecr.u
 docker push 212923332099.dkr.ecr.us-west-2.amazonaws.com/deeperforensics-challenge-<your_aws_id>:latest
 ```
 
-After you push to the repo, the evaluation will automatically start and you will receive an email notifying you that the evaluation starts. In **2.5 hours** you should receive a email with the evaluation result. If there is something wrong like timeout or error, you will also receive a reminder email. Please look in the spam if you don't receive any email!
+After you push to the repo, the evaluation will automatically start and you will receive an email notifying you that the evaluation starts. In **2.5 hours** you should receive another email with the evaluation result. If there is something wrong like timeout or error, you will also receive a reminder email. Please look in the spam if you don't receive any email!
 
 Finally, you can submit the evaluation result to the [challenge website](https://competitions.codalab.org/competitions/25228).
