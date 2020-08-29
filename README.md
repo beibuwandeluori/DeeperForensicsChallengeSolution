@@ -18,7 +18,7 @@ Please refer to the following important hints to ensure a pleasant online evalua
 
 2. [Register](https://competitions.codalab.org/competitions/25228#participate) DeeperForensics Challenge 2020 using the created CodaLab account;
 
-3. Send your **CodaLab user name (i.e., team name)**, **the number of team members**, **affiliation**, **CodaLab email address**, and **AWS account id (12 digits)** to the organizers' email address: [deeperforensics@gmail.com](mailto:deeperforensics@gmail.com). We will check and allocate evaluation resources for you. You will receive a email notifying you that the resources have been allocated. **If you don't receive the email, it may be recognized as spam.**
+3. Send your **CodaLab user name (i.e., team name)**, **the number of team members**, **affiliation**, **CodaLab email address**, and **AWS account id (12 digits)** to the organizers' email address: [deeperforensics@gmail.com](mailto:deeperforensics@gmail.com). We will check and allocate evaluation resources for you. You will receive a email notifying you that the resources have been allocated. *If you don't receive the email, it may be recognized as spam.*
 
 ## Install and configure AWS CLI
 Then you should install AWS CLI ([version 2](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html) recommended).
@@ -177,6 +177,6 @@ docker tag deeperforensics-challenge-<your_aws_id>:latest 212923332099.dkr.ecr.u
 docker push 212923332099.dkr.ecr.us-west-2.amazonaws.com/deeperforensics-challenge-<your_aws_id>:latest
 ```
 
-After you push to the repo, the evaluation will automatically start and you will receive an email notifying you that the evaluation starts. In **2.5 hours** you should receive another email with the evaluation result. If there is something wrong like timeout or error, you will also receive a reminder email. **Please look in the spam if you don't receive any email.**
+After you push to the repo, the evaluation will automatically start and you will receive an email notifying you that the evaluation starts. In **2.5 hours** you should receive another email with the evaluation result. If there is something wrong like timeout or error, you will also receive a reminder email. *Please look in the spam if you don't receive any email.*
 
 Finally, you can submit the evaluation result to the [challenge website](https://competitions.codalab.org/competitions/25228).
