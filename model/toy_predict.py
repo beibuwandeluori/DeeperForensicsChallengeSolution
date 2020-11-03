@@ -254,7 +254,7 @@ class ToyPredictor(DeeperForensicsDetector):
     def __init__(self):
         super(ToyPredictor, self).__init__()
         self.device = 'cuda' if torch.cuda.is_available() else 'cpu'
-        self.is_ensamble = False
+        self.is_ensamble = True
         if not self.is_ensamble:
             # model, _, *_ = model_selection('se_resnext101_32x4d', num_out_classes=2, dropout=0.5)
             model = get_efficientnet(model_name='efficientnet-b0', num_classes=2, pretrained=False)
