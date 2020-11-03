@@ -20,8 +20,8 @@ from eval_kit.extract_frames import extract_frames
 # DON'T CHANGE ANY CODE HERE, OR YOU MAY ENCOUNTER SOME UNEXPECTED PROBLEMS!
 
 WORKSPACE_BUCKET = 'deeperforensics-eval-workspace'
-VIDEO_LIST_PATH = 'test-data/deeperforensicis_runtime_eval_video_list.txt'
-VIDEO_PREFIX = 'test-data/'
+VIDEO_LIST_PATH = 'test-data-3k/deeperforensicis_runtime_eval_video_list.txt'
+VIDEO_PREFIX = 'test-data-3k/'
 UPLOAD_PREFIX = 'test-output/'
 TMP_PATH = '/tmp'
 
@@ -59,13 +59,11 @@ def get_job_name():
 def upload_eval_output(output_probs, output_times, num_frames, job_name, total_time):
     """
     This function uploads the testing output to S3 to trigger evaluation.
-
     params:
     - output_probs (dict): dict of probability of every video
     - output_times (dict): dict of processing time of every video
     - num_frames (dict): dict of number of frames extracting from every video
     - job_name (str)
-
     """
     upload_data = {
         i: {
@@ -87,7 +85,6 @@ def get_frames_iter():
     """
     This function returns a iterator of frames of test videos.
     Each iteration provides a tuple of (video_id, frames), each frame will be in RGB color format with array shape of (height, width, 3).
-
     return: tuple(video_id: str, frames: list)
     """
     video_list = _get_s3_video_list(WORKSPACE_BUCKET, VIDEO_LIST_PATH)
@@ -116,7 +113,6 @@ def get_local_frames_iter(max_number=None):
     This function returns a iterator of frames of test videos.
     It is used for local test of participating algorithms.
     Each iteration provides a tuple of (video_id, frames), each frame will be in RGB color format with array shape of (height, width, 3)
-
     return: tuple(video_id: str, frames: list)
     """
     video_list = [x.strip() for x in open(VIDEO_LIST_PATH)]
@@ -135,7 +131,6 @@ def get_local_frames_iter(max_number=None):
 def verify_local_output(output_probs, output_times, num_frames):
     """
     This function prints the ground truth and prediction for the participant to verify, calculates average FPS.
-
     params:
     - output_probs (dict): dict of probability of every video
     - output_times (dict): dict of processing time of every video

@@ -18,14 +18,15 @@ import time
 import sys
 import logging
 
+# from eval_kit.client_dev import get_local_frames_iter, verify_local_output
 from eval_kit.client import get_local_frames_iter, verify_local_output
 
 logging.basicConfig(level=logging.INFO)
 
-sys.path.append('model')
+# sys.path.append('model')
 ########################################################################################################
 # please change these lines to include your own face forgery detector extending the eval_kit.detector.DeeperForensicsDetector base class.
-from toy_predict import ToyPredictor as DeeperForensicsDetector
+from model.toy_predict import ToyPredictor as DeeperForensicsDetector
 ########################################################################################################
 
 
@@ -42,7 +43,6 @@ def run_local_test(detector_class, frames_iter):
         # send errors to the eval frontend
         raise
     logging.info("Detector initialized.")
-
 
     # run the images one-by-one and get runtime
     output_probs = {}

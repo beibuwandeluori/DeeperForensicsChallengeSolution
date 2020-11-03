@@ -16,13 +16,12 @@ import logging
 
 from eval_kit.client import upload_eval_output, get_frames_iter, get_job_name
 
-
 logging.basicConfig(level=logging.INFO)
 
-sys.path.append('model')
+# sys.path.append('model')
 ########################################################################################################
 # please change these lines to include your own face forgery detector extending the eval_kit.detector.DeeperForensicsDetector base class.
-from toy_predict import ToyPredictor as DeeperForensicsDetector
+from model.toy_predict import ToyPredictor as DeeperForensicsDetector
 ########################################################################################################
 
 

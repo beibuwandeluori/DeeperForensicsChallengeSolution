@@ -1,4 +1,4 @@
-# DeeperForensics Challenge Submission Example
+# DeeperForensics Challenge Submission Example and Solution
 This repo provides an example Docker image for submission of DeeperForensics Challenge 2020. The submission is in the form of online evaluation.
 
 ## Important hints
@@ -180,3 +180,20 @@ docker push 212923332099.dkr.ecr.us-west-2.amazonaws.com/deeperforensics-challen
 After you push to the repo, the evaluation will automatically start and you will receive an email as a notification. In **2.5 hours** you should receive another email with the evaluation result. If there is something wrong like timeout or error, you will still receive a reminder email. *Please look in the spam if you don't receive any email.*
 
 Finally, you can submit the evaluation result to the [challenge website](https://competitions.codalab.org/competitions/25228).
+
+
+## Pipeline
+![image](pipeline.png)
+## Training
+
+### Tricks
+1. Data Augmentation: official augmentation provided in [here](https://github.com/EndlessSora/DeeperForensics-1.0/tree/master/perturbation)
+there are color saturation(CS), color contrast(CC), ocal block-wise(BW), white Gaussian noise in color components(GNC), Gaussian blur(GB) and JPEG compression(JPEG), which are applied directly on the face images. Moreover, 
+we also random mixup these distortions with a probability of 0.2.
+2. LabelSmoothing Loss
+3. Add more data: UADFV, DFD, FF++, Celeb-df and DFDC
+
+```bash
+cd train 
+python train_add_data_my_aug.py
+```
