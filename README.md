@@ -1,5 +1,14 @@
 # DeeperForensics Challenge Solution
-This repo provides an solution for DeeperForensics Challenge 2020. 
+This repo provides an solution for the [DeeperForensics Challenge 2020](https://competitions.codalab.org/competitions/25228). Our solution achieve 1st in the development phase of the DeeperForensics Challenge.
+The ranking can be seen [here](https://competitions.codalab.org/competitions/25228#results)
+
+## Authors
+Team name: Forensic  
+Username: BokingChen
+- [Baoying Chen](https://github.com/beibuwandeluori)
+- [Peiyu Zhuang](https://github.com/ZhuangPeiyu)
+- [Sili Li](https://github.com/szu-lisili)
+
 
 ## Pipeline
 ![image](pipeline.png)
