@@ -1,9 +1,9 @@
 # DeeperForensics Challenge Solution
-This repo provides an solution for the [DeeperForensics Challenge 2020](https://competitions.codalab.org/competitions/25228). Our solution achieve 1st in the development phase of the DeeperForensics Challenge.
+This repo provides an solution for the [DeeperForensics Challenge 2020](https://competitions.codalab.org/competitions/25228). Our solution achieve the 1st in the development phase of the DeeperForensics Challenge.
 The ranking can be seen [here](https://competitions.codalab.org/competitions/25228#results)
 
 ## Authors
-Team name: Forensic  
+Team name: Forensics  
 Username: BokingChen
 - [Baoying Chen](https://github.com/beibuwandeluori)
 - [Peiyu Zhuang](https://github.com/ZhuangPeiyu)
@@ -21,8 +21,8 @@ The final output score of video is the predicted probability that video is fake,
 
 ## Training
 ### Tricks
-1. Data Augmentation: official augmentation provided in [here](https://github.com/EndlessSora/DeeperForensics-1.0/tree/master/perturbation)
-there are color saturation(CS), color contrast(CC), ocal block-wise(BW), white Gaussian noise in color components(GNC), Gaussian blur(GB) and JPEG compression(JPEG), which are applied directly on the face images. Moreover, 
+1. Data Augmentation: official augmentation provided in [here](https://github.com/EndlessSora/DeeperForensics-1.0/tree/master/perturbation).
+There are color saturation(CS), color contrast(CC), ocal block-wise(BW), white Gaussian noise in color components(GNC), Gaussian blur(GB) and JPEG compression(JPEG), which are applied directly on the face images. Moreover, 
 we also random mixup these distortions with a probability of 0.2.
 2. LabelSmoothing Loss
 3. Add more data: UADFV, DFD, FF++, Celeb-df and DFDC
