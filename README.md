@@ -25,7 +25,7 @@ The final output score of video is the predicted probability that video is fake,
 There are color saturation(CS), color contrast(CC), ocal block-wise(BW), white Gaussian noise in color components(GNC), Gaussian blur(GB) and JPEG compression(JPEG), which are applied directly on the face images. Moreover, 
 we also random mixup these distortions with a probability of 0.2.
 2. LabelSmoothing Loss
-3. Add more data: UADFV, DFD, FF++, Celeb-df and DFDC
+3. Add more data: UADFV, DFD, FF++, Celeb-DF and DFDC
 
 ```bash
 cd train 
