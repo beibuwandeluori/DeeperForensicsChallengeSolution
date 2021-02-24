@@ -6,7 +6,7 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 from torch.autograd import Variable
-from torch.utils.data import *
+from torch.utils.data import DataLoader
 import time
 from model.models import get_efficientnet
 from dataset.dataset import DeeperForensicsDataset, get_train_transforms, get_valid_transforms, DeeperForensicsDatasetNew

@@ -27,6 +27,10 @@ we also random mixup these distortions with a probability of 0.2.
 2. LabelSmoothing Loss
 3. Add more data: UADFV, DFD, FF++, Celeb-DF and DFDC
 
+### pretrained weights
+The pretrained weights for efn-b0, efn-b1 and efn-b2 (pretrained in my dataset)
+You can clip [here](https://drive.google.com/file/d/1O2ztuYfVSnRDn-WW5bSPwtdzjoR0Jn11/view?usp=sharing) to download.
+
 ```bash
 cd train 
 python train_add_data_my_aug.py

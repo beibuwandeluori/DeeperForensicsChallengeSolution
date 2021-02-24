@@ -5,7 +5,7 @@ import sys
 from tqdm import tqdm
 import cv2
 import torch
-from torch.utils.data import *
+from torch.utils.data import Dataset, DataLoader
 from albumentations.pytorch import ToTensor, ToTensorV2
 from albumentations import (
     Compose, HorizontalFlip, CLAHE, HueSaturationValue, Normalize, RandomBrightnessContrast,
