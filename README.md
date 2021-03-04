@@ -1,7 +1,7 @@
 # DeeperForensics Challenge Solution
 This repo provides an solution for the [DeeperForensics Challenge 2020](https://competitions.codalab.org/competitions/25228). Our solution achieve the 1st in the development phase of the DeeperForensics Challenge.
 The ranking can be seen [here](https://competitions.codalab.org/competitions/25228#results)
-
+## Technology Report Papers
 [DeeperForensics Challenge 2020 on Real-World Face Forgery Detection:Methods and Results](https://arxiv.org/pdf/2102.09471.pdf)
 
 ## Authors
