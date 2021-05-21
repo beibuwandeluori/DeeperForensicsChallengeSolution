@@ -3,7 +3,7 @@ import sys
 sys.path.append('..')
 
 from eval_kit.detector import DeeperForensicsDetector
-from model.models import model_selection, get_efficientnet
+from model.models import get_efficientnet
 import torch
 import time
 import glob
